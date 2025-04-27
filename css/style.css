@@ -29,26 +29,18 @@ body {
 }
 
 /* Header */
-/* Estilo para o Header */
 header {
     position: relative;
-    height: 100vh;  /* Ocupa 100% da altura da tela */
+    background-image: url('../img/Lucas.png');  /* Caminho da imagem */
+    background-size: cover;  /* Faz a imagem cobrir todo o espaço do header */
+    background-position: center center;  /* Centraliza a imagem */
+    background-repeat: no-repeat;  /* Evita a repetição da imagem */
+    height: 100vh;  /* Garante que o header ocupe toda a altura da tela */
     color: white;
     padding: 0;
 }
 
-header.header-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/Lucas.png');
-    background-size: auto;  /* Ajusta a imagem para cobrir toda a área */
-    z-index: -1;
-}
-
-.container {
+header .container {
     position: relative;
     z-index: 1;  /* Faz com que o conteúdo do header fique sobre a imagem */
     text-align: center;
@@ -65,6 +57,14 @@ header h1 {
 
 header p {
     font-size: 1.5rem;
+}
+
+
+.container {
+    position: relative;
+    z-index: 1;  /* Faz com que o conteúdo do header fique sobre a imagem */
+    text-align: center;
+    padding-top: 20px;  /* Ajuste o espaçamento conforme necessário */
 }
 
 nav ul {
@@ -212,16 +212,6 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    header.header-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/Lucas_mob.png');
-        background-size: auto;  /* Ajusta a imagem para cobrir toda a área */
-        z-index: -1;
-    }
     nav ul {
         flex-direction: column;
         align-items: left;
