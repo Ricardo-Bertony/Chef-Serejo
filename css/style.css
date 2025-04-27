@@ -30,6 +30,10 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    text-align: center;
+}
+.container > p{
+    padding: 18px;
 }
 
 /* Header */
@@ -74,7 +78,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para o botão */
+/* Hero Section */
 #hero .container {
     display: flex;
     flex-direction: column;  /* Empilha os elementos de forma vertical */
