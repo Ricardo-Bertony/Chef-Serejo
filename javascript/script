@@ -1,8 +1,2 @@
-function setHeaderHeight() {
-    const header = document.querySelector('header');
-    const windowHeight = window.innerHeight;
-    header.style.height = `${windowHeight}px`;
-}
-
-window.addEventListener('resize', setHeaderHeight);
-window.addEventListener('load', setHeaderHeight);
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
