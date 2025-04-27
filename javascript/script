@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector('header');
-    header.style.height = window.innerHeight + "px";
-});
+function setHeaderHeight() {
+    const header = document.querySelector('header');
+    const windowHeight = window.innerHeight;
+    header.style.height = `${windowHeight}px`;
+}
+
+window.addEventListener('resize', setHeaderHeight);
+window.addEventListener('load', setHeaderHeight);
