@@ -31,11 +31,12 @@ body {
 /* Header */
 header {
     position: relative;
-    background-image: url('../img/Lucas.png');  /* Caminho da imagem */
-    background-size: cover;  /* Faz a imagem cobrir todo o espaço do header */
-    background-position: center center;  /* Centraliza a imagem */
-    background-repeat: no-repeat;  /* Evita a repetição da imagem */
-    height: 100vh;  /* Garante que o header ocupe toda a altura da tela */
+    background-image: url('../img/Lucas.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: -webkit-fill-available;  /* Para corrigir em alguns dispositivos iOS */
     color: white;
     padding: 0;
 }
