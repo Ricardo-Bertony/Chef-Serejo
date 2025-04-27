@@ -43,7 +43,7 @@ header .header-background {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/Lucas Serejo.png');
+    background-image: url('../img/Lucas.png');
     background-size: cover;  /* Ajusta a imagem para cobrir toda a área */
     z-index: -1;
 }
