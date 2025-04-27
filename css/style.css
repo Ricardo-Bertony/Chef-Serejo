@@ -198,7 +198,7 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
     header {
-        height: 80vh;  /* Ajusta a altura do header em dispositivos móveis */
+        height: 90vh;  /* Ajusta a altura do header em dispositivos móveis */
         background-position: top;  /* Fixa a parte superior da imagem para não cortar */
         background-size: cover;
     }
