@@ -37,7 +37,7 @@ header {
     padding: 0;
 }
 
-header .header-background {
+header.header-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -212,6 +212,16 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    header.header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/Lucas_mob.png');
+        background-size: cover;  /* Ajusta a imagem para cobrir toda a área */
+        z-index: -1;
+    }
     nav ul {
         flex-direction: column;
         align-items: left;
